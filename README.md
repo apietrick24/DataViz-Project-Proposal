@@ -2,9 +2,7 @@
 
 ## Data and Attributes
 
-I plan on using this [data](https://gist.github.com/apietrick24/bfffc6c0d47abf00029790381e89626d) for my project, which originated from this [dataset](https://data.world/josh-nbu/books).
-
-This dataset contains publishing data on more than a thousand books published in the year range \[1300, 2016] and from seven publishers.
+I plan on using my [Book Publishing Dataset](https://gist.github.com/apietrick24/bfffc6c0d47abf00029790381e89626d) for this project. This dataset contains publishing data on more than a thousand books published between 1600 and 2016 and from seven different publishers. There are various attributes about revenue, units sold, ratings, and book metadata. This dataset originated from [Josh Murrey](https://data.world/josh-nbu) on data.world under the name [Books].
 
 Here is a simple breakdown of the attributes included:
 - Publishing Year: The year the book was originally published in
