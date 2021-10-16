@@ -1,83 +1,108 @@
-# CS 573 - Data Visualization Project Proposal
+# CS 573: Data Visualization - Final Project Proposal
 
 ## Data and Attributes
 
-I plan on using my [Book Publishing Dataset](https://gist.github.com/apietrick24/bfffc6c0d47abf00029790381e89626d) for this project. This dataset contains publishing data on more than a thousand books published between 1600 and 2016 and from seven different publishers. There are various attributes about revenue, units sold, ratings, and book metadata. This dataset originated from [Josh Murrey](https://data.world/josh-nbu) on data.world under the name [Books].
+I am planning on using my [Honey Production in the United States Dataset](https://gist.github.com/apietrick24/bed0d1a799e856566704afc3f421abdf) for this project. Originally posted on Kaggle by [Jessica Li](https://www.kaggle.com/jessicali9530) under the title [Honey Production in the USA (1998-2012)](https://www.kaggle.com/jessicali9530/honey-production), this dataset has information on honey bee colonies and the production honey for almost all of the state from 1998 to 2012. I plan on using this data to explore how the honey industry has changed over time and what its future could be. 
 
 Here is a simple breakdown of the attributes included:
-- Publishing Year: The year the book was originally published in
-- Book Name: The title of the book
-- Author: The author(s) who contributed to the book
-- Language Code: The language code for the language the book is written in (ara, en-CA, en-GB, en-US, eng, fre, nl, spa)
-- Author Rating: The rating of the author's writing complexity and/or notability (Excellent, Famous, Intermediate, Novice)
-- Book Average Rating: The average rating of a book out of five
-- Book Rating Count: The number of ratings a book has received
-- Genre: The book's associated genre (children, fiction, genre fiction, nonfiction) 
-- Gross Sales: The total amount of money the book made 
-- Publisher Revenue: The amount of money the publisher made off of the book
-- Sale Price: The amount of money the book was sold for
-- Sales Rank: Rank of the book's unit sold compared to the other books in this database
-- Publisher: The publishing company which was the book was sold under
-- Unit Sold: The total amount of copies sold for the book
+- State: The aberration for the state for which this row's information is for. Not all states are included in this dataset to avoid disclosing data for individual operations
+- Number of Colonies: The number of honey-producing colonies. Specifically, colonies from which honey was able to be taken in that year. 
+- Yield Per Colony: The average honey yield per colony in pounds.
+- Total Production: Estimated total production of the state's honey colonies in pounds (simply Number of Colonies times Yield Per Colony)
+- Stocks: Stockpiles of honey held by producers in pounds.
+- Price Per Pound: Average dollar price per pound of honey in the given state.
+- Production Value: Estimated total value of the state production in dollars (Simply, Total Production times Price Per Pound)
 
 ## Questions and Tasks
-- Is there any correlation between an author's rating and the number of units sold? 
-- How are a book's average rating and number of ratings correlated? Is there a pattern that can be observed?
-- Are books more likely to be bought if they are published by certain publishers? 
-- Given a book in a certain genre, what is the publisher to publish the book to maximize gross sales?
-- Within each author rating, what author has seen the most literary success?
-
-(Within some extra data) 
-
-- Do prestigious literary awards result in larger sales? 
-- Which countries have produced the most influential authors? 
-- How have our cultural taste in literature changed over time?
-
+- How has the rate of honey production yield changed? 
+- Are there any notable trends that have appeared in the number of colonies or production value?
+- Which states produce the most honey? Do these states have more colonies or do their colonies just net a larger yield? 
+- Is there a "honey belt" in the United States or is production evenly spread through the country?
+- How does a producer's stock change per year? Is there general a positive trend or are they having to sell more of their stock due to smaller yields?
 
 ## Prototype Visualizations
 
-Here are a few of my proof of concepts for some visualizations aimed to answer the questions and tasks above:
+Due to pivoting my project so close to the deadline for this proposal, I only had time to construct a prototype for one of my visuals:
 
-This first visualization looks at the relationship between a book's average rating and its' number of ratings. The size of each point is based on a book's unit sold; the bigger the point, the more units the book sold. Size is not linear, rather it is exponential. 
+[![iamge](https://user-images.githubusercontent.com/61635768/137572596-4a633f93-148e-4ad0-a3c9-c5b6186666f8.png)](https://vizhub.com/apietrick24/b4fc3ff45ef245079748eecce6999268)
 
-[![image](https://user-images.githubusercontent.com/61635768/134409740-c83e1e83-4337-41a7-90cc-f6e929704703.png)](https://vizhub.com/apietrick24/a9c2039c7d0644d1a4a3e320f4ea62d2)
-
-With this visualization, you can see that the more ratings a book has, the higher its average rating is. There also seems to be a correlation between the number of ratings a book has and the unit sold. All of the smaller points (the book with less unit sold compared to the rest) are on the left side of the visual. Interestingly, it seems that units sold don't really affect the average rating, as these smaller points seem evenly distributed on the y-axis. 
-
-The second visualization looks at the expected gross sales of a book for each of the publishers in the dataset. Any publisher whose expected average gross sales for a book is less than 1.5k has their bar colored in red. If their value is greater than 1.5k, their bar is colored green. Users are able to highlight a specific publisher by moving their mouse over a bar; making the bar yellow.
-
-[![image](https://user-images.githubusercontent.com/61635768/134410356-47dfedd2-9341-47c5-99a7-21c1102590de.png)](https://vizhub.com/apietrick24/b4b49a43a43c4b67a4e30aa01525b1d6)
-
-The contrast between the bars colored red and the bars colored green tells an interesting story. 1.5k seems like a good split between the publishers as the ones that are colored green have average gross sales well beyond it. As expected, Amazon Digitial Services has the lowest average gross sales per book. This is because, well some of the books they publish do very well, they as publish more books than any other publisher. 
+This visual is a prototype for element 2 in the project, which is a line graph with selectable variables over time. You can see that the total production of honey in the United States has heavily reduced over the interval in this dataset, almost decreasing by 50%. This insight leads to assumptions about other frightening trends with the rest of the variables in the dataset.
 
 ## Sketches
-
 Here is a very rough sketch of what I think the final visualization could look like:
 
-[![image](https://user-images.githubusercontent.com/61635768/134430490-215344f2-5a6a-47e3-ad27-73f87f8d095d.png)](https://user-images.githubusercontent.com/61635768/134430490-215344f2-5a6a-47e3-ad27-73f87f8d095d.png)
+[![image](https://user-images.githubusercontent.com/61635768/137572274-6fc14642-889b-4900-aa8d-d0ca96d001b2.png)](https://user-images.githubusercontent.com/61635768/137572274-6fc14642-889b-4900-aa8d-d0ca96d001b2.png)
 
-**Element 1 - Scatter Plot of Books Based on Gross Sales and Average Rating**
+**Element 1 - Interactive Map of the United States**
 
-Element 1 will be a scatter plot depicting books with the x-axis being gross sales and the y-axis being average rating. This visual aims to look at the question of whether a book's average rating actually affects its' gross sales. The data this visual draws from will be selected from element 2. This visual will hopefully look similar to the first prototype visual. 
+Element 1 will be an interactive map of the United States. It will be heavily connected to other elements in the visual such as having each state's saturation depend on the value for selected variables in element 3 and have the value depend on the interval selected in element 6. If a viewer were to click on a state, element 2 will be updated to only focus on the state's value for the selected variable over time. 
 
-**Element 2 - Publisher, Author Rating, and Genre Selection/Filter Tools**
+**Element 2 - Line Graph of Selected Variable**
 
-Element 2 will be comprised of three drop-down menus and a button. The three menus will allow the user to select specific categorical data from the attributes to base the rest of the elements on. The button will select all of the data in the dataset.
+Element 2 will be a line graph with two specific phases. The first phase is when a state isn't selected in element 1. The line graph will show the total value of the selected variable in element 2 over the interval selected in element 6. This phase is what is shown in the prototype above. Phase two will be when the viewer clicks on a state in element 1. The line graph will then display the value of the selected variable for the state and then the average for all the states in the dataset. 
 
-**Element 3 - List of Top Books**
+**Element 3 - Variable Menu**
 
-Element 3 will display the top three to five books that fit the currently selected data from element 2. It will also display the book's author, publisher, gross sales, and genre. 
+Element 3 is simply a drop-down menu for the viewer to select which variable to base the two visuals on. 
 
-**Element 4 - Stacked Horizontal Bar Chart of Publishers and Average Sales per Book**
+**Element 4 - Supporting Text**
 
-Element 4 will look similar to prototype visual two, except for the fact that it is a stacked bar chart. Each of the publisher's bar will be made of the publish revenue and the gross sales. Like all of the other elements, element 4 will change based on the information feed to it from element 2. 
+I think it's important to give context to the viewer some optional context to the information you are displaying. I would like to have a few paragraphs below my two visuals that talk about the honey industry in the United States and the importance of honey production.
 
-**Element 5 - Vertical Bar Chart of Publishers and Units Sold**
+**Element 5 - Statistics about Dataset**
 
-Element 5 will be a vertical bar chart and have each bars' height relate to the sum of each publisher's unit sold. This height will change as the user selects different data with element 2.
+Similarly to element 4, I would like to give some insight into the dataset I am using. I would like to have a paragraph or maybe bullets just describing the information included and how that information is important. Perhaps I could use some one-variable statistics to help.
+
+**Element 6 - Year Brush**
+
+Element 6 will be a brush for the viewer to select the interval of years they want the visual to display. By default, element 6 will include all the possible years in the dataset. 
+
+**Stretch Goals**
+- If the viewer hasn't selected a state yet, have the map cycle between displaying the selected variable's value for each year
+- Animations for element 2 when changing selected variables or phases
+- Have a bee represent the cursor?
+
+## Schedule of Deliverables
+
+**October 20th:**
+- Rough Draft of Elements 1 and 6 (Interactivity doesn't have to be fully working yet)
+- Modify Element 2 to Include Support for Element 3
+
+**October 27th:**
+- Modify Element 1 to Include Support for Element 3
+- Figure Out How to Filter Data for Element 2 (so that the element doesn't have to rely on a separate CSV file)
+- Prepare Element 2 to Support Phase 2
+
+**November 3rd:**
+- Prepare Element 1's interactivity functions
+- Research How to Get Elements 1 and 2 to Communicate
+- Set Ground Work for Communication
+
+**November 10th:**
+- Get Elements 1, 2, 3, and 6 to fully communicate with each
+- Rough Draft of Final Project
+
+**November 17th:**
+- Clean Up Visuals and Write Element 4 and 5
+- Work on Stretch Goals if no major issues with elements
+
+**November 24th:**
+- Start to Finalize Presentation of Visuals
+- If haven't already, Export to GitHub
+- Work on Stretch Goals if no major issues with elements
+
+**December 1st:**
+- Work on Stretch Goals if no major issues with elements
+- Soft Due Date for Final Project
 
 ## Open Questions
 
-Possible Project Pitfalls:
-- I'm a little nervous about getting all the selections from element 2 to work with the rest of the visualization. I feel somewhat confident for the element individually; however, I think the complexity and scale of getting the elements to work with element 2 will be the project's biggest road bump.
+### Why Pivot the Project?
+
+After learning that the course was 5 weeks longer than I originally thought, I looked at my current project proposal and was unhappy at how dull it was. While I was happy with what I had coded so far, I felt that I could make a better end project if I wasn't restricted to the dataset I had chosen. I wanted to make something a little more expressive and that required the use of D3 and JavaScript. Hence, I decided to pivot my project and look for a new dataset. I don't regret switching so late, I learned a lot from my previous project and it has definitely changed the way I look at making these visuals. 
+
+If you are curious about my previous project proposal, here is a link to the [old ReadMe File](https://github.com/apietrick24/DataViz-Project-Proposal/blob/3be806eee76ea5269429ba0352bbd86f56fd20ae/README.md). 
+
+### Possible Project Pitfalls:
+- I'm a little nervous about getting the interaction between elements 1 and 2 to work correctly. I'm still fairly due to D3 and JavaScript, so I'm a little dubious about my ability to code it correctly. 
 - I'm also worried a bit about how clean the final visualization is going to look. I want all of the elements to cleanly fit together and work as a whole; I feel that it could be very easy for this vision to go astray. I don't want the final visual to look more like all of the elements were just half-heartedly stitched together.
