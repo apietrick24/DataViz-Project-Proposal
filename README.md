@@ -106,3 +106,20 @@ If you are curious about my previous project proposal, here is a link to the [ol
 ### Possible Project Pitfalls:
 - I'm a little nervous about getting the interaction between elements 1 and 2 to work correctly. I'm still fairly due to D3 and JavaScript, so I'm a little dubious about my ability to code it correctly. 
 - I'm also worried a bit about how clean the final visualization is going to look. I want all of the elements to cleanly fit together and work as a whole; I feel that it could be very easy for this vision to go astray. I don't want the final visual to look more like all of the elements were just half-heartedly stitched together.
+
+## Update Log
+
+### October 27th
+This week I focus my time on preparing to tackle the project as one whole item, rather than as separate visual projects. I started to take the code for the visuals I have created so far and make them into separate files that are unreliant on their current HTML environments. I figured that this would be helpful to do now before I start adding more elements and features that need to communicate with each other. I also changed how I'm parsing my CSV file, specifically now I'm using d3.group functions to generate arrays of objects with values I need for each visual. As for the feedback given to me on my project so far, I changed my line chart's curve function to fix issues of smoothing the line too much and misrepresenting the information. To help with this, I also added circles for each data point on the line. 
+
+As for the work for next week, I'm going to finish my drop-down menus and properly construct the second part of my line chart. Ideally, I would like to have a rough draft of my map of the United States also done. 
+
+#### Element 2
+
+[![iamge](https://user-images.githubusercontent.com/61635768/139172131-5b00d34c-8e61-4389-8aea-76a31254fe3d.png)](https://vizhub.com/apietrick24/aa86472650884a7d8b63eefa06ba71e4)
+
+- Added circles on the line to represent the values for the passed data
+- Addressed feedback and changed the curve of the path from d3.curveBasis to d3.curveMonotoneX to fix issues with over smoothing and misrepresentation
+- Changed CSV parsing function to make use of d3.group and avoid having to use a separate CSV file
+- Started to convert/move the visual's code to a separate JS file in order to properly work with future elements (WIP, not shown in image) 
+- Started to add the functionality of drop-down menus (WIP, not shown in image)
