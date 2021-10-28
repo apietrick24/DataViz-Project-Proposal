@@ -110,9 +110,9 @@ If you are curious about my previous project proposal, here is a link to the [ol
 ## Update Log
 
 ### October 27th
-This week I focus my time on preparing to tackle the project as one whole item, rather than as separate visual projects. I started to take the code for the visuals I have created so far and make them into separate files that are unreliant on their current HTML environments. I figured that this would be helpful to do now before I start adding more elements and features that need to communicate with each other. I also changed how I'm parsing my CSV file, specifically now I'm using d3.group functions to generate arrays of objects with values I need for each visual. As for the feedback given to me on my project so far, I changed my line chart's curve function to fix issues of smoothing the line too much and misrepresenting the information. To help with this, I also added circles for each data point on the line. 
+This week I focus my time on preparing to tackle the project as one whole item, rather than as separate visual projects. I started to take the code for the visuals I have created so far and make them into separate files that are unreliant on their current HTML environments. I figured that this would be helpful to do now before I start adding more elements and features that need to communicate with each other. I also changed how I'm parsing my CSV file, specifically now I'm using d3.group functions to generate arrays of objects with values I need for each visual. Support for a drop-down menu has been added on the backend for my line graph. As for the feedback given to me on my project so far, I changed my line graph's curve function to fix issues of smoothing the line too much and misrepresenting the information. To help with this, I also added circles for each data point on the line. 
 
-As for the work for next week, I'm going to finish my drop-down menus and properly construct the second part of my line chart. Ideally, I would like to have a rough draft of my map of the United States also done. 
+As for the work for next week, I'm going to finish my drop-down menus and properly construct the second part of my line graph. Ideally, I would like to have a rough draft of my map of the United States also done. 
 
 #### Element 2
 
