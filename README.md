@@ -123,3 +123,16 @@ As for the work for next week, I'm going to finish my drop-down menus and proper
 - Changed CSV parsing function to make use of d3.group and avoid having to use a separate CSV file
 - Started to convert/move the visual's code to a separate JS file in order to properly work with future elements (WIP, not shown in image) 
 - Started to add the functionality of drop-down menus (WIP, not shown in image)
+
+### November 10th
+This week I spent my time trying to familiarize myself with creating and using geo-positional maps with json. Using the lessons I learned a few weeks about d3 grouping, I manipulated my dataset and started to play with displaying information on a state map of the United States of America. I started to set up interaction elements with this grouping for the map and have a very rough draft of what I want the final map to look like. I then spent the rest of my time trying to get drop-down menus and brushing elements working on my line graph from earlier; however, I kept running into issues. 
+
+Getting these interactions to work with my line graph is crucial and will be my primary task for next week. Hopefully, I will have some time to flesh out my map a bit more. 
+
+#### Element 1
+
+[![iamge](https://user-images.githubusercontent.com/61635768/141235070-3b4e7f32-6c49-497b-8d8e-35319e23737d.png)](https://user-images.githubusercontent.com/61635768/141235070-3b4e7f32-6c49-497b-8d8e-35319e23737d.png)
+
+- Created a rough draft of the dataset's parser for element 1 and prepared for the interact elements (3 and 6) to manipulate the parser
+- Create a very-rough draft of element 1 (spent a lot of time learning how to use json and display that data as a map)
+- Worked further on elements 3 and 6 with the intention of getting them to work with element 2 first and then connecting element 2 to element 1
