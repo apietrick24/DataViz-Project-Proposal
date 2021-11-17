@@ -136,3 +136,15 @@ Getting these interactions to work with my line graph is crucial and will be my 
 - Created a rough draft of the dataset's parser for element 1 and prepared for the interact elements (3 and 6) to manipulate the parser
 - Create a very-rough draft of element 1 (spent a lot of time learning how to use json and display that data as a map)
 - Worked further on elements 3 and 6 with the intention of getting them to work with element 2 first and then connecting element 2 to element 1
+
+### November 17th
+While I had originally set out to continue working on the line graph element for my project's progress this week, I ended up spending most of my time learning more about how geo-positional maps worked with json and how to use them for visualization. I resumed working on interactive elements with my geo-positional map and succeed in coding a tooltip bar for when the mouse hovered over a state and laid the groundwork for interaction with the line graph when a state is clicked on the map. After successfully iterating my map element, I turned my attention back to the line graph. These last few weeks away from it helped me in understanding the fundamental issues I was running into when trying to add interaction to the element. I decided that it would be in my best interest to completely rebuild the line graph with the lessons I had learned since the last working on it. While no actual visual can be constructed right now, progress is going smoothly and I hope to have the element and, hopefully, some of its interactions done by next week. 
+
+#### Element 1
+[![iamge](https://user-images.githubusercontent.com/61635768/142284045-496e3264-6134-4faa-b6c0-d09cdebdc04c.png)](https://vizhub.com/apietrick24/b7902249e89245c8a7e76ea5fa7af36a)
+
+- Successfully transferred progress on Element 1 from local files on my computer to a [public project on VizHub](https://vizhub.com/apietrick24/b7902249e89245c8a7e76ea5fa7af36a)
+- Added interactivity to Element 1:
+  - A tooltip bar now appears whenever the mouse is over a state and will display the state's name and average production value
+  - When a state is clicked, the state will be colored yellow. If a yellow state is clicked, the state return to its' original color. This is the groundwork for later interactions with Element 2
+- Started to rework the internal systems of Element 1 to get interactive elements to work (WIP, not shown in image)
