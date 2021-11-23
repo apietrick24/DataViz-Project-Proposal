@@ -1,4 +1,4 @@
-# CS 573: Data Visualization - Final Project Proposal
+# CS 573: Data Visualization - Honey Production Visualization Project Proposal
 
 ## Data and Attributes
 
@@ -147,4 +147,17 @@ While I had originally set out to continue working on the line graph element for
 - Added interactivity to Element 1:
   - A tooltip bar now appears whenever the mouse is over a state and will display the state's name and average production value
   - When a state is clicked, the state will be colored yellow. If a yellow state is clicked, the state return to its' original color. This is the groundwork for later interactions with Element 2
-- Started to rework the internal systems of Element 1 to get interactive elements to work (WIP, not shown in image)
+- Started to rework the internal systems of Element 2 to get interactive elements to work (WIP, not shown in image)
+
+### November 24th
+After a few weeks of shifting my attention elsewhere, I finally got back to working on my line graph. I decided to start from scratch and try to build the graph with drop-down menus built-in. This simpler approach, compare to the modular messy I had previously been in, worked and I finally have a line graph with a working drop-down menu. In addition to changing the variable on which the line's y-value is based, the graph's y-axis also changes to accurately reflect the new variable. I also readded improved on data points and the line's curve from a few weeks back. Just like how I did so for the map, I also added a tooltip bar for when the mouse scrolls over a data point on the line. 
+
+Looking ahead, I want to start to focus on connecting these two visuals together and getting the interactions between them working. While I do want to include the interactive brush feature on the line graph, I should properly start to get the project into its final shape beforehand. 
+
+#### Element 2
+[![iamge](https://user-images.githubusercontent.com/61635768/142977572-f56f3dc2-30fa-4559-bd6b-cdd07bf28425.png)](https://vizhub.com/apietrick24/15292b59a640499b8608f6041aa3ea73)
+
+- Successfully migrated all progress on Element 2 from local files on my computer to a [public project on VizHub](https://vizhub.com/apietrick24/15292b59a640499b8608f6041aa3ea73)
+- Finally got a drop-down menu to work with Element 2. Now the y-variable will chance when a new variable is selected from the box
+- In addition to the y-variable and line changing, the y-axis also updates to properly display the entirely of the new variable
+- Added a tooltip bar when the mouse is over the circles. This displays the year and the current y-value. 
