@@ -1,0 +1,36 @@
+/* Style for Custom Tooltip */
+path:hover {
+	fill-opacity: .4;
+}
+
+path:click {
+  fill: yellow;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {   
+ 	position: absolute;           
+	text-align: center;           
+	width: 150px;                  
+	height: 15px;                 
+	padding: 2px;             
+	font: 12px sans-serif;        
+	background: white;   
+	border: 0px;      
+	border-radius: 8px;           
+	pointer-events: none;         
+}
+        
+/* Legend Font Style */
+body {
+	font: 11px sans-serif;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Times New Roman; 
+  fill: orange;
+}
+
+
