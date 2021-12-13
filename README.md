@@ -161,3 +161,21 @@ Looking ahead, I want to start to focus on connecting these two visuals together
 - Finally got a drop-down menu to work with Element 2. Now the y-variable will chance when a new variable is selected from the box
 - In addition to the y-variable and line changing, the y-axis also updates to properly display the entirely of the new variable
 - Added a tooltip bar when the mouse is over the circles. This displays the year and the current y-value. 
+
+### December 13th
+
+I finally was able to get the interaction to work between my line graph and my map. The first part was just getting those two visuals on the same HTML file. Because of the problems I ran into earlier when trying to make my visuals modular, each of my visuals was written in their separate HTML file, not in JS files. This made combining the two visuals into one HTML a bit difficult; however, after adjusting the SVG sizes and order of commands, I was able to successfully get both visuals to appear on the page with one HTML file. Next, I had to link the line graph's drop-down menu to the map so that the map's values also changed when a new variable was picked. Doing this was a bit easier than I had predicted. All I had to do was generate the map in the line graph's update function so that it could have access to the drop-down menu's variable. During this step, I also made a few smaller changes, including having the map's color scale by the same color as the line's for a given variable. The most difficult task I had to handle was getting the interaction between the map and line graph working so that when a state is clicked on the map, the line graph also displays a line with the state's values. While I had prepared for this interactivity earlier, I ran into a lot of bugs while trying to implement it fully. In the end, I had to completely restructure how my program parsed the input CSV file in order to get this interactivity fully working. While my project is missing one interactive element I had originally planned to add (the brushing feature for the line graph), I am very happy with how it has come together and looks now.
+
+
+#### Elements 1, 2 and 3
+[![iamge](https://user-images.githubusercontent.com/61635768/145858792-440ccd3a-a8c3-4308-8f5b-ac2da9c77a68.png)](https://vizhub.com/apietrick24/5d57e4f8a2334f6bb2f43b7aa4c77dfb)
+
+[![iamge](https://user-images.githubusercontent.com/61635768/145858797-3ba42787-c882-4776-8249-d28c49272c14.png)](https://vizhub.com/apietrick24/5d57e4f8a2334f6bb2f43b7aa4c77dfb)
+
+[![iamge](https://user-images.githubusercontent.com/61635768/145858801-140f5185-e936-4f4b-91e6-5741a6414b4b.png)](https://vizhub.com/apietrick24/5d57e4f8a2334f6bb2f43b7aa4c77dfb)
+
+- Successfully migrated all Elements 1 and 2 together to be displayed on the same project page
+- Changed colors on Element 1 to be the same color for the y-variable selected on Element 2
+- Drop-down menu (Element 3) now also works with Element 1
+- Clicking on a state will now display the state's values for the selected y-variable on the line graph
+- Selected state's lines will be updated if the y-variable is changed due to the drop-down menu
