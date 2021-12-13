@@ -1,5 +1,10 @@
 # CS 573: Data Visualization - Honey Production Visualization Project Proposal
 
+### Project Videos
+
+#### - [Explaing Honey Production Visualization Project Proposal](https://www.youtube.com/watch?v=2WMlFd1fAEk)
+#### - [Honey Production Visualization Project Video Report](https://www.youtube.com/watch?v=_SkpWuAgMXQ)
+
 ## Data and Attributes
 
 I am planning on using my [Honey Production in the United States Dataset](https://gist.github.com/apietrick24/bed0d1a799e856566704afc3f421abdf) for this project. Originally posted on Kaggle by [Jessica Li](https://www.kaggle.com/jessicali9530) under the title [Honey Production in the USA (1998-2012)](https://www.kaggle.com/jessicali9530/honey-production), this dataset has information on honey bee colonies and the production honey for almost all of the state from 1998 to 2012. I plan on using this data to explore how the honey industry has changed over time and what its future could be. 
